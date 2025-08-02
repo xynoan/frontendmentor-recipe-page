@@ -37,17 +37,35 @@ img {
   margin: 1.5em 1.3em;
 }
 
-.paragraph {
-  color: var(--stone-600);
-}
-
 .preparation {
+  margin-top: 1.5em;
   background-color: var(--rose-50);
   padding: 2em;
 }
 
 .preparation__header {
+  font-size: 1.2em;
   color: var(--rose-800);
+  font-weight: bold;
+}
+
+.preparation__list li {
+  list-style: none;
+  margin: 0.5em 1em;
+  font-size: 0.8em;
+}
+
+.preparation__list li>span {
+  font-weight: bold;
+}
+
+.preparation__list li::before {
+  content: "•";
+  color: var(--rose-800);
+  font-size: 1.2em;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
 .attribution {
@@ -59,10 +77,8 @@ img {
   color: hsl(228, 45%, 44%);
 }
 
-attribution a {
-  color: hsl(228, 45%, 44%);
-}
+/* reusable classes */
 
-attribution a {
-  color: hsl(228, 45%, 44%);
+.grey {
+  color: var(--stone-600);
 }
